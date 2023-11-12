@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from "@angular/common/http";
 import {WeatherService} from "./services";
 import { WidgetWeatherComponent } from './components/widget-weather/widget-weather.component';
+import {MatIconModule} from "@angular/material/icon";
+import {MatCardModule} from "@angular/material/card";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { WidgetWeatherComponent } from './components/widget-weather/widget-weath
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule,
+    MatCardModule,
+    MatInputModule
   ],
   providers: [WeatherService],
   bootstrap: [AppComponent]
